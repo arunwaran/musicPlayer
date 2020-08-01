@@ -1,5 +1,7 @@
 # Music Player
 
+A basic music player suitable for a small music library. 
+
 ### To Install you only need to download and run the install.sh script
 ### You need to have node.js and npm installed before running
 1. bash install.sh
