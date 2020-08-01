@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- 'npm start'  to start  -->
+    <meta charset="UTF-8">
+    <title>Music Player</title>
+    <!-- https://electronjs.org/docs/tutorial/security#csp-meta-tag -->
+    <meta http-equiv="Content-Security-Policy" content="script-src 'self' 'unsafe-inline';" />
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js" defer></script>
+  </head>
+  
+  <!-- <body> -->
+  <body onload="onStartUp()">
+    <div class="container" id="divContainer">
+      <!-- scan music -->
+      <div id="headerId" class="header">
+        <span>
+          <h1>A-run</h1>
+          <i onclick="showHideSettingsDiv()"><img id="settingID" src="icons/settings.svg" width="30" height="30"></i>
+        </span>
+      </div>
+
+      <!-- Scan for music Form -->
+      <div id="scanMusicDiv">
+        <i onclick="showHideSettingsDiv()" id="exitSettingsID"><img src="icons/exit.svg" width="20" height="20"></i></br></br>
+        <label>Enter Directory Path:</label></br>
+        <input type="text" id="textMusicDirectory"></br>
+        <button type="button" onclick="scanForMusic()">Scan for Music</button>
+      </div>
+      
+
+      <div id="musicListDiv">
+        <!-- music list -->
+        <ul id="musicList">
+        </ul>
+      </div>
+
+      <div id="musicPlayer">
+        <!-- player -->
+      <div id="musicPlayerInfoDiv">
+
+      </div>
+
+        <div id="audioControlsDiv">
+          
+          <span>
+            <a onclick="nextOrPreviousSong(0)"><img src="icons/back.svg" width="50" height="50"></a>
+            <a onclick="playOrPause()"><img src="icons/play.svg" width="50" height="50"></a>
+            <a onclick="nextOrPreviousSong(1)"><img src="icons/next.svg" width="50" height="50"></a>
+          </span>
+       </div>
+      </div>
+
+  </div>
+</body>
+</html>
