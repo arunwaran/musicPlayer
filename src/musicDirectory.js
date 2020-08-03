@@ -51,7 +51,7 @@ module.exports = class musicDirectory{
         })
         
         fs.writeFileSync(filename, JSON.stringify(this.musicLibraryArray));
-        return "Done Scaning";
+        return "Done Scaning. Restart Application";
       }
       return "not a valid directory";
     }

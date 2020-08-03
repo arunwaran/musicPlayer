@@ -144,6 +144,7 @@ ul{
 
 li > a:hover {
   background-color: #e9ff768a;
+  cursor: pointer;
 }
 
 li{
