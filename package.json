@@ -13,7 +13,7 @@
   "author": "arunwaran",
   "license": "ISC",
   "devDependencies": {
-    "electron": "^9.1.2"
+    "electron": "^15.5.5"
   },
   "dependencies": {
     "vue": "^2.6.11"
